@@ -1,0 +1,53 @@
+import { posts } from "@/data/posts";
+import Image from "next/image";
+import Link from "next/link";
+
+export default async function BlogPostPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const post = posts.find((p) => p.slug === slug);
+
+  if (!post) {
+    return <p className="text-center py-20">Post not found</p>;
+  }
+
+  return (
+    <article className="max-w-3xl mx-auto px-4 py-12 text-neutral-900 dark:text-neutral-100">
+      <Link
+        href="/"
+        className="inline-flex items-center text-sm hover:underline py-4"
+      >
+        ← Back to home
+      </Link>
+      <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
+
+      <p className="text-sm text-gray-500 mb-4">
+        By{" "}
+        <a href={`/authors/${post.authorSlug}`} className="underline">
+          {post.author}
+        </a>
+        • {new Date(post.date).toLocaleDateString()}
+      </p>
+
+      <Image
+        src={post.imageUrl}
+        alt={post.title}
+        width={1000}
+        height={1000}
+        className="w-full h-64 sm:h-120 object-cover rounded-md mb-4"
+      />
+
+      <div className="prose prose-neutral dark:prose-invert max-w-none">
+        <p>{post.excerpt}</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          euismod, nisi vel consectetur interdum, nisl nisi aliquam nisi,
+          euismod aliquam nisl nisi euismod nisi.
+        </p>
+      </div>
+    </article>
+  );
+}

@@ -1,0 +1,18 @@
+Copyright © 2025 BloomTPL
+
+This template is licensed for personal and commercial use under the following terms:
+
+You CAN:
+- Use this template in unlimited personal or commercial projects.
+- Modify and adapt it to fit your needs.
+- Use it in SaaS products, client projects, or internal tools.
+
+You CANNOT:
+- Redistribute, resell, or sublicense the template.
+- Share the source code publicly (even modified).
+- Use the design or structure to create competing templates.
+
+
+You are responsible for complying with the respective licenses of these third-party tools.
+
+For questions or custom licenses, contact: bloomtpl@gmail.com
