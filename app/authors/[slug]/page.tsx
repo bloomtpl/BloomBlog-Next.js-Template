@@ -18,7 +18,7 @@ export default async function AuthorPage({
   const authoredPosts = posts.filter((post) => post.authorSlug === slug);
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 text-neutral-900 dark:text-neutral-100">
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
       <div className="mb-8 text-center">
         <Image
           src={author.image}

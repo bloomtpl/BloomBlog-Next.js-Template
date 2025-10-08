@@ -15,7 +15,7 @@ export default async function BlogPostPage({
   }
 
   return (
-    <article className="max-w-3xl mx-auto px-4 py-12 text-neutral-900 dark:text-neutral-100">
+    <div className="max-w-3xl mx-auto px-4 py-12">
       <Link
         href="/"
         className="inline-flex items-center text-sm hover:underline py-4"
@@ -46,6 +46,6 @@ export default async function BlogPostPage({
       <div className="prose prose-neutral dark:prose-invert max-w-none">
         <p>{post.excerpt}</p>
       </div>
-    </article>
+    </div>
   );
 }

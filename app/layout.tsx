@@ -23,11 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${outfit.className} antialiased max-w-3xl mx-auto w-full px-4 sm:px-6 py-10 bg-white text-black dark:bg-black dark:text-white`}
-      >
+      <body className={`${outfit.className} antialiased`}>
         <Header />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>

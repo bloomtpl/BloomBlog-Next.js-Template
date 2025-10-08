@@ -10,7 +10,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="border-b border-neutral-200 dark:border-neutral-800 px-4 pb-4">
+    <header className="border-b border-neutral-200 dark:border-neutral-800 px-4 pb-4 pt-6 max-w-3xl mx-auto">
       <div className="flex items-center justify-between">
         <Link href="/" className="text-xl cursor-pointer">
           Bloom Blog
