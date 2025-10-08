@@ -26,9 +26,12 @@ export default async function BlogPostPage({
 
       <p className="text-sm text-gray-500 mb-4">
         By{" "}
-        <a href={`/authors/${post.authorSlug}`} className="underline">
+        <Link
+          href={`/authors/${post.authorSlug}`}
+          className="underline hover:text-blue-600"
+        >
           {post.author}
-        </a>
+        </Link>
         • {new Date(post.date).toLocaleDateString()}
       </p>
 
@@ -42,11 +45,6 @@ export default async function BlogPostPage({
 
       <div className="prose prose-neutral dark:prose-invert max-w-none">
         <p>{post.excerpt}</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          euismod, nisi vel consectetur interdum, nisl nisi aliquam nisi,
-          euismod aliquam nisl nisi euismod nisi.
-        </p>
       </div>
     </article>
   );

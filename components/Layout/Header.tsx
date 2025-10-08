@@ -1,28 +1,20 @@
 "use client";
 
-import { ThemeToggle } from "@/components/Layout/ThemeToggle";
+import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const categories = ["Design", "Development", "Travel", "Lifestyle", "Writing"];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const router = useRouter();
-
-  const handleLogoClick = () => {
-    router.push("/");
-    router.refresh();
-    setOpen(false);
-  };
 
   return (
     <header className="border-b border-neutral-200 dark:border-neutral-800 px-4 pb-4">
       <div className="flex items-center justify-between">
-        <button onClick={handleLogoClick} className="text-xl cursor-pointer">
+        <Link href="/" className="text-xl cursor-pointer">
           Bloom Blog
-        </button>
+        </Link>
 
         <nav className="hidden md:flex gap-4 text-sm items-center">
           {categories.map((cat) => (

@@ -1,4 +1,3 @@
-"use client";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
 export default function Footer() {
@@ -7,7 +6,6 @@ export default function Footer() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
         <div className="text-lg">Bloom Blog</div>
 
-
         <div className="flex gap-4">
           <a
             href="https://twitter.com"
@@ -15,7 +13,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             aria-label="Twitter"
           >
-            <Twitter className="w-5 h-5 hover:text-[var(--accent)] transition-colors" />
+            <Twitter className="w-5 h-5 hover:text-blue-600 transition-colors" />
           </a>
           <a
             href="https://instagram.com"
@@ -23,7 +21,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             aria-label="Instagram"
           >
-            <Instagram className="w-5 h-5 hover:text-[var(--accent)] transition-colors" />
+            <Instagram className="w-5 h-5 hover:text-blue-600 transition-colors" />
           </a>
           <a
             href="https://facebook.com"
@@ -31,7 +29,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             aria-label="Facebook"
           >
-            <Facebook className="w-5 h-5 hover:text-[var(--accent)] transition-colors" />
+            <Facebook className="w-5 h-5 hover:text-blue-600 transition-colors" />
           </a>
         </div>
       </div>

@@ -1,17 +1,14 @@
-import Footer from "@/components/Layout/Footer";
-import Header from "@/components/Layout/Header";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-3xl mx-auto w-full px-4 sm:px-6 py-10 bg-white text-black dark:bg-black dark:text-white font-[family-name:var(--font-geist-sans)]`}
+        className={`${outfit.className} antialiased max-w-3xl mx-auto w-full px-4 sm:px-6 py-10 bg-white text-black dark:bg-black dark:text-white`}
       >
         <Header />
         <main>{children}</main>

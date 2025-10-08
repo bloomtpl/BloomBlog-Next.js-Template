@@ -1,14 +1,11 @@
-import BlogSection from "@/components/HomePage/BlogSection";
-import Newsletter from "@/components/HomePage/Newsletter";
-import { Suspense } from "react";
+import BlogSection from "@/components/home/BlogSection";
+import HeroSection from "@/components/home/HeroSection";
 
 export default function Home() {
   return (
     <div>
-      <Newsletter />
-      <Suspense fallback={<div>Loading posts...</div>}>
-        <BlogSection />
-      </Suspense>
+      <HeroSection />
+      <BlogSection />
     </div>
   );
 }

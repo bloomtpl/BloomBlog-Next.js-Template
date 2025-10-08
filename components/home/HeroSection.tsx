@@ -1,9 +1,7 @@
-"use client";
-
-export default function Newsletter() {
+export default function HeroSection() {
   return (
     <section className="max-w-3xl mx-auto px-4 sm:px-6 py-16 text-center">
-      <h1 className="text-4xl sm:text-5xl font-bold mb-4">
+      <h1 className="text-4xl sm:text-5xl font-bold mb-4 tracking-tight">
         Welcome to the Bloom Blog
       </h1>
       <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-8">
@@ -11,13 +9,7 @@ export default function Newsletter() {
         with simplicity.
       </p>
 
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          //  Handle newsletter signup here
-        }}
-        className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto"
-      >
+      <form className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
         <input
           type="email"
           placeholder="Enter your email"
