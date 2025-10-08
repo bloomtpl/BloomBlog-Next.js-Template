@@ -1,14 +1,12 @@
-"use client";
-
 import { posts } from "@/data/posts";
 import Image from "next/image";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 
-export default function BlogSection() {
-  const searchParams = useSearchParams();
-  const category = searchParams.get("cat") || "All";
+interface BlogSectionProps {
+  category: string;
+}
 
+export default function BlogSection({ category }: BlogSectionProps) {
   const filteredPosts =
     category === "All"
       ? posts
