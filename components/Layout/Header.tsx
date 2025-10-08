@@ -1,6 +1,6 @@
 "use client";
 
-import { ThemeToggle } from "@/components/layout/ThemeToggle";
+import { ThemeToggle } from "@/components/Layout/ThemeToggle";
 import Link from "next/link";
 import { useState } from "react";
 
