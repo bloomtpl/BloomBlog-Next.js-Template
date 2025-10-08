@@ -27,7 +27,7 @@ export default function BlogSection() {
               height={400}
               src={post.imageUrl}
               alt={post.title}
-              className="w-full h-64 md:h-100 object-cover rounded-md shadow-xl"
+              className="w-full h-[400px] max-h-[400px] object-cover rounded-md shadow-xl"
               priority={index === 0}
               fetchPriority={index === 0 ? "high" : "auto"}
               sizes="(max-width: 768px) 100vw, 800px"

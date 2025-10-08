@@ -1,10 +1,10 @@
 export default function HeroSection() {
   return (
     <section className="max-w-3xl mx-auto px-4 sm:px-6 py-16 text-center">
-      <h1 className="text-4xl sm:text-5xl font-bold mb-4 tracking-tight">
+      <h1 className="text-4xl sm:text-5xl font-bold mb-4 tracking-tight min-h-[3.5rem]">
         Welcome to the Bloom Blog
       </h1>
-      <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-8">
+      <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-8 min-h-[2.5rem]">
         Discover insights on design, development, and creativity — delivered
         with simplicity.
       </p>
